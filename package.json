@@ -1,0 +1,30 @@
+{
+  "name": "userific-mongoose",
+  "version": "0.0.0",
+  "description": "Mongoose & MongoDB based backend to the userific interface",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nisaacson/userific-mongoose.git"
+  },
+  "keywords": [
+    "userific",
+    "mongoose",
+    "mongodb",
+    "user",
+    ""
+  ],
+  "author": "Noah Isaacson",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "cc7f1999340a78569f409c57412727fcd08874d3",
+  "bugs": {
+    "url": "https://github.com/nisaacson/userific-mongoose/issues"
+  }
+}
