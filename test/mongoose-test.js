@@ -4,6 +4,7 @@ var UserificMongoose = require('../')
 var testSuite = require('userific-test')
 var mongoose = require('mongoose')
 describe('Userific Mongoose Backend', function() {
+  this.timeout('100s')
   before(function(done) {
     var connStr = 'mongodb://localhost:27017/mongoose-bcrypt-test';
     mongoose.connect(connStr, function(err) {
