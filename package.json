@@ -35,6 +35,7 @@
   "devDependencies": {
     "userific-test": "0.0.1",
     "mocha": "~1.10.0",
-    "should": "~1.2.2"
+    "should": "~1.2.2",
+    "eyespect": "~0.1.8"
   }
 }

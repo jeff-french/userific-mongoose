@@ -1,6 +1,7 @@
+var User = require('../lib/user')
 var should = require('should')
-var testSuite = require('userific-test')
 var UserificMongoose = require('../')
+var testSuite = require('userific-test')
 var mongoose = require('mongoose')
 describe('Userific Mongoose Backend', function() {
   before(function(done) {
@@ -9,7 +10,10 @@ describe('Userific Mongoose Backend', function() {
       should.not.exist(err, 'error connecting to mongodb console')
       console.log('Successfully connected to MongoDB')
       done()
-    });
+})
+  })
+  beforeEach(function(done) {
+    User.collection.drop(done);
   })
   var backend = new UserificMongoose()
   testSuite(backend)
