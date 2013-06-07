@@ -26,5 +26,15 @@
   "gitHead": "cc7f1999340a78569f409c57412727fcd08874d3",
   "bugs": {
     "url": "https://github.com/nisaacson/userific-mongoose/issues"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "mongoose": "~3.6.11",
+    "userific": "0.0.2"
+  },
+  "devDependencies": {
+    "userific-test": "0.0.1",
+    "mocha": "~1.10.0",
+    "should": "~1.2.2"
   }
 }
