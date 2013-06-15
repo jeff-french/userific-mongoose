@@ -9,7 +9,7 @@ var UserModel = require('./lib/user')
  * Userfic Backend which uses a mongoose model and a MongoDB datastore
  * @return {[type]} [description]
  */
-var Userific = function() {
+var Userific = function(mongoose) {
   Userific.super_.call(this)
 }
 Userific.prototype = Object.create(UserificInterface.prototype)
