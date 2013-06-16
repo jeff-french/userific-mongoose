@@ -22,8 +22,17 @@ describe('Userific Mongoose Backend', function() {
       done(null)
     })
   })
-  it('should find user', function() {
-    User.find({})
+  it('toClient should strip password from user object', function(done) {
+    var user = new User()
+    user.email = 'newUser@example.com'
+    user.password = 'barPassword'
+    user.save(function (err) {
+      should.not.exist(err)
+      var clientUser = user.toClient()
+      should.exist(clientUser)
+      should.not.exist(clientUser.password)
+      done()
+    })
   })
   testSuite(backend)
 })
