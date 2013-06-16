@@ -30,7 +30,8 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "mongoose": "~3.6.11",
-    "userific": "0.0.4"
+    "userific": "0.0.4",
+    "nconf": "~0.6.7"
   },
   "devDependencies": {
     "userific-test": "0.0.4",

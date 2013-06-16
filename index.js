@@ -3,13 +3,14 @@ var authenticate = require('./lib/authenticate')
 var changePassword = require('./lib/changePassword')
 var changeEmail = require('./lib/changeEmail')
 var UserificInterface = require('userific')
-var UserModel = require('./lib/user')
 
+var models = require('./lib/models/index')
+var UserModel = models.User
 /**
  * Userfic Backend which uses a mongoose model and a MongoDB datastore
  * @return {[type]} [description]
  */
-var Userific = function(mongoose) {
+var Userific = function() {
   Userific.super_.call(this)
 }
 Userific.prototype = Object.create(UserificInterface.prototype)
