@@ -1,6 +1,6 @@
 {
   "name": "userific-mongoose",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mongoose & MongoDB based backend to the userific interface",
   "main": "index.js",
   "directories": {
